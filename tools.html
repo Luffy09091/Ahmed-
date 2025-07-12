@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>برامج حسابية - أحمد كمال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>برامج حسابية</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="work.html">أعمالي</a>
+            <a href="tools.html">برامج حسابية</a>
+            <a href="contact.html">تواصل معي</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>حساب حجم الإسطوانة</h2>
+        <script>
+            let r = 5, h = 10;
+            let volume = Math.PI * r * r * h;
+            document.write("الحجم = " + volume.toFixed(2));
+        </script>
+
+        <h2>حساب مساحة الدائرة</h2>
+        <script>
+            let radius = 4;
+            let area = Math.PI * radius * radius;
+            document.write("المساحة = " + area.toFixed(2));
+        </script>
+
+        <h2>حل معادلة من الدرجة الثانية</h2>
+        <script>
+            let a = 1, b = -3, c = 2;
+            let delta = b*b - 4*a*c;
+            let x1 = (-b + Math.sqrt(delta)) / (2*a);
+            let x2 = (-b - Math.sqrt(delta)) / (2*a);
+            document.write("الجذور: " + x1.toFixed(2) + ", " + x2.toFixed(2));
+        </script>
+    </div>
+    <footer>
+        <p>تابعني على:</p>
+        <a href="https://facebook.com" target="_blank">📘 فيسبوك</a> |
+        <a href="https://instagram.com" target="_blank">📸 إنستغرام</a> |
+        <a href="https://linkedin.com" target="_blank">💼 لينكدإن</a> |
+        <a href="https://wa.me/249123456789" target="_blank">📱 واتساب</a>
+    </footer>
+</body>
+</html>
