@@ -17,6 +17,7 @@
       background-color: #0077b6;
       color: white;
       padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
     }
     nav {
       margin-top: 15px;
@@ -34,6 +35,7 @@
       background-color: #0077b6;
       color: white;
       padding: 10px;
+      animation: fadeIn 1.5s ease-in-out;
     }
     .welcome {
       background-color: #caf0f8;
@@ -41,6 +43,16 @@
       border-radius: 10px;
       margin: 20px auto;
       width: 80%;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -60,7 +72,9 @@
 
   <section>
     <div class="welcome">
-      <h2>أهلاً بيك 👋</h2>
+      <h2>أحمد كمال</h2>
+      <p>طالب كلية تقنية المعلومات – جامعة الجزيرة</p>
+      <img src="assets/placeholder.png" alt="Ahmed Kamal">
       <p>هذا الموقع عبارة عن مشروع تعريفي بسيط يشمل أعمالي وبرامجي الحسابية بالإضافة إلى وسيلة للتواصل معي.</p>
     </div>
   </section>

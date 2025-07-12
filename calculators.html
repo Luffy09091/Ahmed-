@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>برامج حسابية</title>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
+      font-family: Tahoma, Arial, sans-serif;
       background-color: #f0f8ff;
-      direction: rtl;
       text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px;
+      direction: rtl;
+      padding: 50px;
     }
     nav a {
       margin: 0 10px;
@@ -24,106 +18,16 @@
       color: #0077b6;
       font-weight: bold;
     }
-    section {
-      padding: 30px;
-    }
-    .calculator {
-      background-color: #e0f7fa;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-    }
-    input, button {
-      padding: 8px;
-      margin: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      width: 150px;
-    }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>برامج حسابية</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="works.html">الأعمال</a>
-      <a href="calculators.html">برامج حسابية</a>
-      <a href="contact.html">تواصل معنا</a>
-    </nav>
-  </header>
-
-  <section>
-    <div class="calculator">
-      <h2>حساب حجم الأسطوانة</h2>
-      <input type="number" id="radius1" placeholder="نصف القطر">
-      <input type="number" id="height1" placeholder="الارتفاع">
-      <button onclick="calcCylinder()">احسب</button>
-      <p id="cylinderResult"></p>
-    </div>
-
-    <div class="calculator">
-      <h2>حساب مساحة الدائرة</h2>
-      <input type="number" id="radius2" placeholder="نصف القطر">
-      <button onclick="calcCircle()">احسب</button>
-      <p id="circleResult"></p>
-    </div>
-
-    <div class="calculator">
-      <h2>حل معادلة من الدرجة الثانية</h2>
-      <input type="number" id="a" placeholder="a">
-      <input type="number" id="b" placeholder="b">
-      <input type="number" id="c" placeholder="c">
-      <button onclick="solveQuadratic()">احسب</button>
-      <p id="quadResult"></p>
-    </div>
-  </section>
-
-  <script>
-    function calcCylinder() {
-      const r = parseFloat(document.getElementById('radius1').value);
-      const h = parseFloat(document.getElementById('height1').value);
-      if (!isNaN(r) && !isNaN(h)) {
-        const volume = Math.PI * r * r * h;
-        document.getElementById('cylinderResult').textContent = `الحجم = ${volume.toFixed(2)}`;
-      } else {
-        document.getElementById('cylinderResult').textContent = 'الرجاء إدخال قيم صحيحة';
-      }
-    }
-
-    function calcCircle() {
-      const r = parseFloat(document.getElementById('radius2').value);
-      if (!isNaN(r)) {
-        const area = Math.PI * r * r;
-        document.getElementById('circleResult').textContent = `المساحة = ${area.toFixed(2)}`;
-      } else {
-        document.getElementById('circleResult').textContent = 'الرجاء إدخال نصف قطر صحيح';
-      }
-    }
-
-    function solveQuadratic() {
-      const a = parseFloat(document.getElementById('a').value);
-      const b = parseFloat(document.getElementById('b').value);
-      const c = parseFloat(document.getElementById('c').value);
-      if (!isNaN(a) && !isNaN(b) && !isNaN(c) && a !== 0) {
-        const d = b * b - 4 * a * c;
-        if (d > 0) {
-          const x1 = (-b + Math.sqrt(d)) / (2 * a);
-          const x2 = (-b - Math.sqrt(d)) / (2 * a);
-          document.getElementById('quadResult').textContent = `جذران حقيقيان: x1 = ${x1.toFixed(2)}, x2 = ${x2.toFixed(2)}`;
-        } else if (d === 0) {
-          const x = -b / (2 * a);
-          document.getElementById('quadResult').textContent = `جذر مكرر: x = ${x.toFixed(2)}`;
-        } else {
-          document.getElementById('quadResult').textContent = 'لا يوجد حلول حقيقية (الجذر التربيعي لمعامل سالب)';
-        }
-      } else {
-        document.getElementById('quadResult').textContent = 'الرجاء إدخال قيم صحيحة';
-      }
-    }
-  </script>
-
+  <h1>برامج حسابية</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="works.html">الأعمال</a>
+    <a href="calculators.html">برامج حسابية</a>
+    <a href="contact.html">تواصل معنا</a>
+  </nav>
+  <p>هذه الصفحة تحت الإنشاء حالياً.</p>
 </body>
 </html>

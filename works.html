@@ -17,6 +17,7 @@
       background-color: #0077b6;
       color: white;
       padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
     }
     nav a {
       margin: 0 10px;
@@ -29,17 +30,26 @@
     }
     .project {
       background-color: #e0f7fa;
-      margin: 15px auto;
-      padding: 15px;
+      margin: 20px auto;
+      padding: 20px;
       border-radius: 10px;
       width: 80%;
+      animation: fadeIn 1.5s ease-in-out;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>أعمالي</h1>
+    <h1>أعمالي - أحمد كمال</h1>
     <nav>
       <a href="index.html">الرئيسية</a>
       <a href="works.html">الأعمال</a>
@@ -52,10 +62,12 @@
     <div class="project">
       <h2>مشروع حاسبة BMI</h2>
       <p>تطبيق بسيط لحساب مؤشر كتلة الجسم باستخدام JavaScript.</p>
+      <img src="assets/bmi_project.png" alt="BMI Calculator Project">
     </div>
     <div class="project">
       <h2>موقع شخصي HTML/CSS</h2>
       <p>صفحة تعريفية بسيطة باستخدام HTML و CSS فقط.</p>
+      <img src="assets/html_css_project.png" alt="HTML/CSS Project">
     </div>
   </section>
 
